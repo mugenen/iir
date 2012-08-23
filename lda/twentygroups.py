@@ -3,6 +3,7 @@
 
 # 20 Groups Loader
 #   - load data at http://kdd.ics.uci.edu/databases/20newsgroups/20newsgroups.html
+#                  http://qwone.com/~jason/20Newsgroups/
 # This code is available under the MIT License.
 # (c)2012 Nakatani Shuyo / Cybozu Labs Inc.
 
