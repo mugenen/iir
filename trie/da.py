@@ -159,5 +159,18 @@ class DoubleArray(object):
             pointers = new_pointers
         return events
 
-
+    def common_prefix_search(self, s):
+        words = []
+        cur = 0
+        for i, c in enumerate(iter(s)):
+            v = ord(c)
+            next = self.base[cur] + v
+            if next >= self.N or self.check[next] != cur:
+                return words
+            cur = next
+            if cur >= 0:
+                value = self.value[cur]
+                if value >= 0:
+                    words.append(value)
+        return words
 
